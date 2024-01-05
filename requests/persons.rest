@@ -1,6 +1,6 @@
-GET http://localhost:3001/api/persons
+GET https://fullstackopen-3-bqkf.onrender.com/api/persons
 ###
-POST http://localhost:3001/api/persons
+POST https://fullstackopen-3-bqkf.onrender.com/api/persons
 Content-Type: application/json
 
 {
@@ -8,6 +8,6 @@ Content-Type: application/json
     "number":"782"
 }
 ###
-DELETE http://localhost:3001/api/persons/4
+DELETE https://fullstackopen-3-bqkf.onrender.com/api/persons/4
 ###
-GET http://localhost:3001/info
+GET https://fullstackopen-3-bqkf.onrender.com/info
