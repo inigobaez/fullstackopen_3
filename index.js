@@ -8,7 +8,8 @@ app.use(morgan(':method :url :status :response-time ms - :res[content-length] :b
 
 let persons = require('./persons')
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
+
 const baseURL = `/api/persons`
 
 
@@ -63,5 +64,6 @@ app.get('/info', (request, response) => {
 })
 
 app.listen(PORT, () => {
+
     console.log(`server running on port${PORT}`)
 })
