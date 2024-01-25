@@ -1,0 +1,29 @@
+GET http://localhost:3001/api/persons
+### GET BY ID
+GET http://localhost:3001/api/persons/659d6b13e79c5a35aaba3b41
+### GET BY ID NON EXISTING ID
+GET http://localhost:3001/api/persons/659d6b13e79c5a35aaba3b41
+### GET BY ID WRONG ID FORMAT
+GET http://localhost:3001/api/persons/659d6b13e79c5a35aaba3b4zz
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name":"Josan",
+    "number":"782"
+}
+###
+PUT http://localhost:3001/api/persons/659d6b13e79c5a35aaba3b41
+Content-Type: application/json
+
+{
+    "name":"Oianeeee",
+    "number":"1111"
+}
+### DELETE EXISTING ID
+DELETE http://localhost:3001/api/persons/659ec245f085a679cd2659223
+###
+GET http://localhost:3001/info
+### unknown endpoint
+GET http://localhost:3001/unknown
